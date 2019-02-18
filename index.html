@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Chat Room</title>
+	<style type="text/css">
+		#mainbox {
+			border: solid 5px;
+			height: 500px;
+			width: 500px;
+			border-color: green;
+			border-radius:10px;
+		}
+		#box_title {
+			font-size: 50px;
+			color: blue;
+		}
+		#chat_show_box {
+			height: 300px;
+			width: 400px;
+			border-color: grey;
+			border: solid 2px;
+			border-radius: 10px;
+			margin: 5px 5px 5px 5px;
+		}
+	</style>
+</head>
+<body>
+	<div align="center" valign="center" height="100%">
+		<div id="mainbox">
+			<h1 id="box_title">Chat</h1>
+			<div align="left">
+				<div style="margin-left: 20px">
+					Name: 
+					<select style="margin-left: 20px" name="who" id="who">
+						<option value="admin">admin</option>
+						<option value="user1">user1</option>
+						<option value="user1">user2</option>
+					</select>
+				</div>
+				<div id="chat_show_box" name="chat_show_box"></div>
+				<div id="input_box" style="margin-left: 5px">
+					<input type="text" name="input_msg" id="input_msg" style="margin-right: 50px"></input>
+					<button id="send" name="send">send</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
